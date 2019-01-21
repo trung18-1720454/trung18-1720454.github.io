@@ -1,0 +1,64 @@
+
+
+
+
+
+
+mg {
+  float: right;
+}
+
+p.dotted {border-style: dotted;}
+
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+<style>
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.normal {
+  font-size: 25px;
+}
+p.italic {
+  font-size: 25px;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
