@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Job Application</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+<center><h2>Job Application</h2></center>
+
+
+
+<fieldset><legend><h4>Personal Information</h4></legend><table border="0" cellpadding="5" cellspacing="0">
+<tr> <td style="width: 50%">
+<label for="First_Name"><span class="bold-text">First name *</span></label><br />
+<input name="First_Name" type="text" maxlength="50" style="width: 260px" />
+</td> <td style="width: 50%">
+<label for="Last_Name"><span class="bold-text">Last name *</span></label><br />
+<input name="Last_Name" type="text" maxlength="50" style="width: 260px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Email_Address"><span class="bold-text">Full Address *</span></label><br />
+<input name="Email_Address" type="text" maxlength="100" style="width: 535px" />
+<br><br>
+<label for="Email_Address"><span class="bold-text">Email*</span></label><br />
+<input name="Email_Address" type="text" maxlength="100" style="width: 535px" />
+</td> </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <tr> <td colspan="2">
+<label for="Portfolio"><span class="bold-text">Portfolio website</span></label><br />
+<input name="Portfolio" type="text" maxlength="255" value="http://" style="width: 535px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Position"><span class="bold-text">Position you are applying for *</span></label><br />
+<input name="Position" type="text" maxlength="100" style="width: 535px" />
+</td> </tr> <tr> <td>
+<label for="Salary"><span class="bold-text">Salary requirements</span></label><br /> <input name="Salary" type="text" maxlength="50" style="width: 260px" /> </td> <td>
+<label for="StartDate"><span class="bold-text">When can you start?</span></label><br />
+<input name="StartDate" type="text" maxlength="50" style="width: 260px" />
+</td> </tr> <tr> <td>
+<label for="Phone"><span class="bold-text">Phone *</span></label><br />
+<input name="Phone" type="text" maxlength="50" style="width: 260px" />
+</td> <td>
+<label for="Fax"><span class="bold-text">Fax</span></label><br />
+<input name="Fax" type="text" maxlength="50" style="width: 260px" />
+</td> </tr> <tr> <td colspan="2">
+<label for="Relocate"><span class="bold-text">Are you willing to relocate?</span></label><br />
+<input name="Relocate" type="radio" value="Yes" checked="checked" /> Yes      
+<input name="Relocate" type="radio" value="No" /> No      
+<input name="Relocate" type="radio" value="NotSure" /> Not sure
+</td> </tr> <tr> <td colspan="2">
+<label for="Organization"><span class="bold-text">Last company you worked for</span></label><br />
+<input name="Organization" type="text" maxlength="100" style="width: 535px" />
+</td> </tr> 
+
+</td> </tr>
+</table></fieldset>
+
+
+
+
+
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	
+
+
+	<fieldset>
+		<legend>Availability</legend>
+		<div class="field">
+			<label>Are you legally able to be employed in this country?</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+		<div class="field">
+			<label>What type of position are you seeking? (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
+				<li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
+				<li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
+				<li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label>Hours available</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>
+			</table>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>Why do you deserve this job?</label><br>
+			<textarea name="deserve" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Describe a recent project:</label><br>
+			<textarea name="project" rows="6" cols="60"></textarea>
+		</div>
+		<tr> <td colspan="2">
+<label for="Reference"><span class="bold-text">Reference / Comments / Questions</span></label><br />
+<textarea name="Reference" rows="7" cols="40" style="width: 535px"></textarea>
+</td> </tr> <tr> <td colspan="2" style="text-align: center;">
+	</fieldset>
+
+	<input type="submit" value="Submit form">
+
+</form>
+</body>
+</html>
